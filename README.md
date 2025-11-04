@@ -93,6 +93,12 @@ You should now have runs tracked with metrics being logged.
 For more details see official documentation on
 [mlflow tracking integration](https://www.mlflow.org/docs/latest/quickstart.html#using-the-tracking-api).
 
+## ngrok setting
+```
+$ tmux new -s mlflow # or already create session then: tmux attach -t mlflow
+$ ngrok http --domain=mlflow.actnova.io  10101 # ctrl + b + d to exit
+```
+
 # Configuration options
 
 All configuration is done as environment variables.
